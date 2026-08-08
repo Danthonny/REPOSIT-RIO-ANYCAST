@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boske · Sites publicados</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='%2398A857'%3E%3Cpath d='M16 44 L22 24 L28 44 Z'/%3E%3Cpath d='M28 46 L34 20 L40 46 Z'/%3E%3Cpath d='M40 44 L45 27 L50 44 Z'/%3E%3Crect x='12' y='46' width='42' height='3' rx='1.5'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+  :root{
+    --musgo:#5E6B3B; --floresta:#222B1A; --broto:#98A857;
+    --terra:#7C4E30; --areia:#ECE4D1; --carvao:#1E1F18;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; padding:48px 24px;
+    background:var(--floresta); color:var(--areia);
+    font-family:'Hanken Grotesk',system-ui,sans-serif;
+    display:flex; flex-direction:column; align-items:center;
+  }
+  .wrap{width:100%; max-width:860px}
+  header{display:flex; align-items:center; gap:14px; margin-bottom:8px}
+  .emblema{width:40px; height:40px; flex:0 0 auto}
+  .marca{
+    font-family:'Bricolage Grotesque',sans-serif; font-weight:700;
+    font-size:30px; letter-spacing:-.02em; color:var(--areia); line-height:1;
+  }
+  .sub{color:var(--broto); font-size:15px; margin:0 0 40px 54px}
+  h2{
+    font-family:'Bricolage Grotesque',sans-serif; font-weight:600;
+    font-size:13px; text-transform:uppercase; letter-spacing:.14em;
+    color:var(--broto); margin:0 0 16px;
+  }
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+  a.card{
+    display:block; padding:22px; text-decoration:none;
+    background:rgba(236,228,209,.05); border:1px solid rgba(152,168,87,.28);
+    border-radius:14px; transition:.18s ease;
+  }
+  a.card:hover{background:rgba(152,168,87,.12); border-color:var(--broto); transform:translateY(-2px)}
+  .nome{
+    font-family:'Bricolage Grotesque',sans-serif; font-weight:600;
+    font-size:20px; color:var(--areia); margin-bottom:6px;
+  }
+  .desc{font-size:14px; color:rgba(236,228,209,.66); line-height:1.5}
+  .tag{
+    display:inline-block; margin-top:12px; padding:3px 10px; border-radius:999px;
+    font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+    background:var(--musgo); color:var(--areia);
+  }
+  footer{
+    margin-top:48px; padding-top:20px; width:100%;
+    border-top:1px solid rgba(152,168,87,.2);
+    font-size:13px; color:rgba(236,228,209,.45);
+  }
+  code{background:rgba(0,0,0,.28); padding:2px 6px; border-radius:5px; color:var(--broto)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="emblema" viewBox="0 0 64 64" aria-hidden="true">
+      <g fill="#98A857">
+        <path d="M16 44 L22 24 L28 44 Z"/>
+        <path d="M28 46 L34 20 L40 46 Z"/>
+        <path d="M40 44 L45 27 L50 44 Z"/>
+        <rect x="12" y="46" width="42" height="3" rx="1.5"/>
+      </g>
+    </svg>
+    <div class="marca">Boske</div>
+  </header>
+  <p class="sub">Sites e páginas publicados pela agência.</p>
+
+  <h2>No ar</h2>
+  <div class="grid">
+    <a class="card" href="./boske/">
+      <div class="nome">Boske</div>
+      <div class="desc">Site institucional da agência — identidade v3, landing single-page responsiva.</div>
+      <span class="tag">Publicado</span>
+    </a>
+  </div>
+
+  <footer>
+    Cada pasta na raiz do repositório vira um endereço: <code>/boske/</code>, <code>/cliente/</code>, e assim por diante.
+    Para publicar um site novo, basta adicionar a pasta com o <code>index.html</code> dentro.
+  </footer>
+</div>
+</body>
+</html>
