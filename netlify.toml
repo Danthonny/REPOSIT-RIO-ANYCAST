@@ -1,3 +1,11 @@
+# O site da Boske é a raiz. /boske/ era o endereço antigo — redireciona
+# em definitivo para não quebrar link que já tenha sido compartilhado.
+[[redirects]]
+  from = "/boske/*"
+  to = "/"
+  status = 301
+  force = true
+
 [build]
   # Site 100% estático — nada pra compilar.
   publish = "."
